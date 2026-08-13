@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { BiEnvelope, BiEnvelopeOpen, BiCheck, BiBlock, BiRefresh, BiX, BiDownload, BiFilter, BiSortAlt2 } from 'react-icons/bi'
+import { BiEnvelope, BiEnvelopeOpen, BiCheck, BiBlock, BiRefresh, BiX, BiFilter, BiSortAlt2 } from 'react-icons/bi'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 

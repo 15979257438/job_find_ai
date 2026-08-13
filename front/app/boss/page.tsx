@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createSSEWithBackoff } from '@/lib/sse'
 import { createPortal } from 'react-dom'
-import { BiBriefcase, BiSave, BiSearch, BiMap, BiMoney, BiBuilding, BiTime, BiBarChart, BiTrash, BiPlus, BiPlay, BiStop, BiLogOut } from 'react-icons/bi'
+import { BiBriefcase, BiSave, BiSearch, BiMoney, BiBuilding, BiTrash, BiPlus, BiPlay, BiStop, BiLogOut } from 'react-icons/bi'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'

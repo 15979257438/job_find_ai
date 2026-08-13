@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { createSSEWithBackoff } from '@/lib/sse'
-import { BiSearch, BiSave, BiTargetLock, BiMap, BiMoney, BiTime, BiBookmark, BiBarChart, BiPlay, BiStop, BiLogOut, BiBriefcase } from 'react-icons/bi'
+import { BiSearch, BiSave, BiMoney, BiPlay, BiStop, BiLogOut, BiBriefcase } from 'react-icons/bi'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'

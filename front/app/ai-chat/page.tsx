@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { BiBrain, BiSend, BiTrash, BiPlus, BiCheck, BiX, BiCopy, BiTime, BiUserVoice, BiHistory, BiRefresh } from 'react-icons/bi'
+import { BiBrain, BiSend, BiPlus, BiCheck, BiX, BiCopy, BiTime, BiUserVoice, BiHistory, BiRefresh } from 'react-icons/bi'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Markdown from '@/components/Markdown'
@@ -98,7 +98,7 @@ export default function AiChatPage() {
     } catch (e: any) { toast('error', e.message); setBusy(false) }
   }
 
-  async function confirm(cardId: number, ok: boolean) {
+  async function confirmCard(cardId: number, ok: boolean) {
     const r = await fetch(`${API}/api/ai-chat/sessions/${sessionId}/confirm`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ system_card_message_id: cardId, confirm: ok })
@@ -193,7 +193,7 @@ export default function AiChatPage() {
                       )}
                     </div>
                   </div>
-                  {m.role === 'system_card' ? <SystemCardContent content={m.content} onConfirm={(ok) => confirm(m.id, ok)} /> : null}
+                  {m.role === 'system_card' ? <SystemCardContent content={m.content} onConfirm={(ok) => confirmCard(m.id, ok)} /> : null}
                   {m.role === 'assistant' ? <Markdown source={m.content} /> : <div className="whitespace-pre-wrap">{m.content}</div>}
                 </div>
               </motion.div>

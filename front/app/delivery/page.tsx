@@ -1,8 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { BiTask, BiPlay, BiRefresh, BiCheckCircle, BiXCircle, BiTime, BiDownload, BiListUl, BiRocket } from 'react-icons/bi'
+import { BiTask, BiRefresh, BiListUl, BiRocket } from 'react-icons/bi'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
@@ -333,7 +332,7 @@ export default function DeliveryPage() {
       {(req.platforms || []).length > 0 && (
         <Card className="bg-[#12121a] border-white/10 p-6 space-y-4">
           <div className="flex gap-2 border-b border-white/10 pb-2">
-            {(req.platforms || []).map(pid => {
+            {(req.platforms || []).map((pid: string) => {
               const meta = PLATFORMS.find(p => p.id === pid)!
               return (
                 <button key={pid} type="button" onClick={() => setActiveTab(pid)}

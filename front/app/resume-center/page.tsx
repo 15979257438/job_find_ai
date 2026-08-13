@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { BiUpload, BiTrash, BiRefresh, BiEdit, BiX, BiFile, BiCheckCircle, BiXCircle, BiTime, BiDownload } from 'react-icons/bi'
+import { BiUpload, BiRefresh, BiEdit, BiX, BiCheckCircle, BiXCircle, BiTime } from 'react-icons/bi'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { RESUME_TEMPLATES } from '@/lib/resume-templates'
@@ -42,7 +42,7 @@ export default function ResumeCenterPage() {
     const f = fileRef.current?.files?.[0]
     if (!f) { toast('info', '请选择文件'); return }
     if (f.size > 10 * 1024 * 1024) { toast('error', '文件超过 10MB'); return }
-    const ext = f.name.toLowerCase().split('.').pop()
+    const ext = (f.name.toLowerCase().split('.').pop() || '').toLowerCase()
     if (!['pdf', 'docx', 'doc'].includes(ext)) { toast('error', '仅支持 .pdf / .docx / .doc'); return }
     setBusy(true); toast('info', '上传中...')
     const fd = new FormData(); fd.append('file', f)

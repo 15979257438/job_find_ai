@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { BiPlus, BiTrash, BiEdit, BiX, BiCheckCircle, BiUserCircle } from 'react-icons/bi'
+import { BiPlus, BiTrash, BiEdit, BiX, BiCheckCircle, BiUserCircle, BiErrorCircle, BiHistory } from 'react-icons/bi'
+import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
@@ -389,7 +390,7 @@ export default function ProfilePage() {
           {diff && diff.differences && diff.differences.length > 0 ? (
             <Card className="p-4 bg-blacksection border-strokedark">
               <h2 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                <BiAlertTriangle className="text-amber-300" /> Resume ↔ Profile 差异（{diff.differences.length}）
+                <BiErrorCircle className="text-amber-300" /> Resume ↔ Profile 差异（{diff.differences.length}）
               </h2>
               <ul className="space-y-2">
                 {diff.differences.map((d: any, i: number) => (
