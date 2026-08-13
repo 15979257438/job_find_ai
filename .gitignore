@@ -1,0 +1,87 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+config.yaml
+.git-rewrite
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+.idea
+*.sh
+CLAUDE.md
+.claude
+nul
+dist.zip
+db/
+# Playwright
+.playwright/
+ms-playwright/
+playwright-*
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+### VS Code ###
+.vscode/
+data.json
+src/main/java/boss/data.json
+merge_prs.log
+### Mac OS ###
+.DS_Store
+cookie.json
+.env
+chromedriver
+*.jpg
+
+# Database files
+db/
+*.db
+
+# Frontend build output
+dist/
+
+# Gradle cache
+.gradle/
+# Frontend deps / build cache
+front/node_modules/
+front/.next/
+
+# E2E test scripts (local only)
+e2e_*.py
+v1v2_check.py
+v5_e2e.py
+
+# Temp JSON payloads (local only)
+crawl*.json
+check_merged.json
+gen.json
+pull.json
+submit.json
+t1.json
+t2.json
+t3.json
+tpl.json
+test_resume.txt
+
+# Next.js export output
+front/out/
+
+# Personal workspace notes (Chinese filenames)
+改造需求文档.md
+本地使用指南.md

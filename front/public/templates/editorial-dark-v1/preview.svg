@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 600" width="420" height="600">
+  <rect width="420" height="600" fill="#0a0a0f"/>
+  <rect x="32" y="44" width="356" height="1" fill="#1f1f2a"/>
+  <text x="40" y="84" font-family="Playfair Display, serif" font-size="32" font-weight="700" fill="#f5f5f7">Resume Name</text>
+  <text x="40" y="108" font-family="DM Sans, sans-serif" font-size="12" fill="#9a9aa6">13800000000 · name@example.com · 杭州</text>
+  <text x="40" y="138" font-family="DM Sans, sans-serif" font-size="11" fill="#f0b90b">期望：城市 杭州 · 薪资 25-40</text>
+  <text x="40" y="180" font-family="Playfair Display, serif" font-size="14" letter-spacing="2" fill="#f0b90b">个人简介</text>
+  <line x1="40" y1="186" x2="380" y2="186" stroke="#1f1f2a"/>
+  <rect x="40" y="200" width="280" height="6" rx="1" fill="#1f1f2a"/>
+  <rect x="40" y="214" width="220" height="6" rx="1" fill="#1f1f2a"/>
+  <text x="40" y="252" font-family="Playfair Display, serif" font-size="14" letter-spacing="2" fill="#f0b90b">工作经历</text>
+  <line x1="40" y1="258" x2="380" y2="258" stroke="#1f1f2a"/>
+  <text x="40" y="278" font-family="DM Sans, sans-serif" font-size="12" fill="#e6e6ea">XX公司 · 后端工程师</text>
+  <text x="320" y="278" font-family="DM Sans, sans-serif" font-size="11" fill="#64748b">2020 ~ 至今</text>
+  <rect x="40" y="290" width="300" height="5" rx="1" fill="#1f1f2a"/>
+  <rect x="40" y="302" width="240" height="5" rx="1" fill="#1f1f2a"/>
+  <text x="40" y="338" font-family="Playfair Display, serif" font-size="14" letter-spacing="2" fill="#f0b90b">竞赛</text>
+  <rect x="100" y="328" width="60" height="14" fill="#f0b90b"/>
+  <text x="105" y="339" font-family="DM Sans, sans-serif" font-size="9" letter-spacing="1" fill="#0a0a0f">来自个人数据库</text>
+  <rect x="40" y="354" width="180" height="6" rx="1" fill="#1f1f2a"/>
+  <rect x="40" y="366" width="160" height="6" rx="1" fill="#1f1f2a"/>
+  <text x="40" y="420" font-family="Playfair Display, serif" font-size="14" letter-spacing="2" fill="#f0b90b">技能</text>
+  <line x1="40" y1="426" x2="380" y2="426" stroke="#1f1f2a"/>
+  <rect x="40" y="438" width="58" height="22" fill="none" stroke="#f0b90b"/>
+  <text x="48" y="453" font-family="DM Sans, sans-serif" font-size="11" fill="#f0b90b">Java</text>
+  <rect x="106" y="438" width="80" height="22" fill="none" stroke="#f0b90b"/>
+  <text x="114" y="453" font-family="DM Sans, sans-serif" font-size="11" fill="#f0b90b">Spring Boot</text>
+  <rect x="194" y="438" width="68" height="22" fill="none" stroke="#f0b90b"/>
+  <text x="202" y="453" font-family="DM Sans, sans-serif" font-size="11" fill="#f0b90b">Kafka</text>
+  <rect x="270" y="438" width="64" height="22" fill="none" stroke="#f0b90b"/>
+  <text x="278" y="453" font-family="DM Sans, sans-serif" font-size="11" fill="#f0b90b">MySQL</text>
+</svg>
